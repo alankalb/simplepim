@@ -1,0 +1,20 @@
+{
+  "name": "simplepim",
+  "version": "1.0.0",
+  "description": "A simple demonstration of how third party systems interact with the Shopify API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alankalb/simplepim.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alankalb/simplepim/issues"
+  },
+  "homepage": "https://github.com/alankalb/simplepim#readme"
+}
