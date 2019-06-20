@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/alankalb/simplepim/issues"
   },
-  "homepage": "https://github.com/alankalb/simplepim#readme"
+  "homepage": "https://github.com/alankalb/simplepim#readme",
+  "dependencies": {
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
 }
