@@ -14,7 +14,7 @@ const Index = () => (
         >
           <Card
             sectioned 
-            primaryFooterAction={{content: 'Creaate Product'}}
+            primaryFooterAction={{content: 'Create Product'}}
           >
             <FormLayout>
               <TextField label="Title" onChange={() => {}} />
