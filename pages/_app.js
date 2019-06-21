@@ -13,7 +13,7 @@ class MyApp extends App {
           <title>Simple PIM</title>
           <meta charSet="utf-8" />
         </Head>
-        <AppProvider apiKey={API_KEY}>
+        <AppProvider shopOrigin="alankalb.myshopify.com">
           <Component {...pageProps} />
         </AppProvider>
           
