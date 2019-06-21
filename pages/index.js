@@ -1,4 +1,5 @@
 import { Page, Layout, Card, FormLayout, TextField } from '@shopify/polaris';
+import CreateProduct from '../components/CreateProduct.js'
 
 
 const Index = () => (
@@ -7,23 +8,7 @@ const Index = () => (
       title="Simple PIM Example"
       separator
     >
-      <Layout sectioned={true}>
-        <Layout.AnnotatedSection 
-          title="Create a Product" 
-          description="Use the Product API GET endpoint to create a new product."
-        >
-          <Card
-            sectioned 
-            primaryFooterAction={{content: 'Create Product'}}
-          >
-            <FormLayout>
-              <TextField label="Title" onChange={() => {}} />
-              <TextField label="Description" onChange={() => {}} />
-              <TextField label="Price" onChange={() => {}} />
-            </FormLayout>
-          </Card>
-        </Layout.AnnotatedSection>
-      </Layout>
+      <CreateProduct></CreateProduct>
     </Page>
   </div>
 );
