@@ -1,4 +1,4 @@
-import { TextField, Layout, Card, FormLayout, TextContainer } from '@shopify/polaris';
+import { TextField, Layout, Card, FormLayout, TextContainer, Form, TextStyle } from '@shopify/polaris';
 
 class CreateProduct extends React.Component {
   state = {
@@ -7,13 +7,17 @@ class CreateProduct extends React.Component {
     price: '0.00',
   };
 
+  
+
   handleChange = field => {
     return value => this.setState({ [field]: value });
-  };  
+  };
+  
+  test = () => {
+    console.log('success')
+  }
 
   render() {
-    
-
     return (
       <Layout sectioned={true}>
       <Layout.AnnotatedSection 
@@ -22,7 +26,7 @@ class CreateProduct extends React.Component {
       >
         <Card
           sectioned 
-          primaryFooterAction={{content: 'Create Product'}}
+          primaryFooterAction={{content: 'Create Product', onAction: this.test}}
         >
           <Card.Section>
             <FormLayout>
@@ -60,8 +64,6 @@ class CreateProduct extends React.Component {
                 {"}"}
               </p>
 
-              
-              
             </TextContainer>
           </Card.Section>
           
