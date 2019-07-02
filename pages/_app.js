@@ -3,6 +3,16 @@ import Head from 'next/head';
 import { AppProvider } from '@shopify/polaris';
 import '@shopify/polaris/styles.css';
 import '../stylesheets/extra.css';
+import ApolloClient from 'apollo-boost';
+import { ApolloProvider } from 'react-apollo';
+
+const client = new ApolloClient({
+  fetchOptions: {
+    credentials: 'include'
+  },
+});
+
+
 
 
 class MyApp extends App {
@@ -15,9 +25,10 @@ class MyApp extends App {
           <meta charSet="utf-8" />
         </Head>
         <AppProvider shopOrigin="alankalb.myshopify.com">
-          <Component {...pageProps} />
+          <ApolloProvider client={client}>
+            <Component {...pageProps} />
+          </ApolloProvider>
         </AppProvider>
-          
       </React.Fragment>
     );
   }
