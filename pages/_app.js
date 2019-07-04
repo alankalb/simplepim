@@ -12,9 +12,6 @@ const client = new ApolloClient({
   },
 });
 
-
-
-
 class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
