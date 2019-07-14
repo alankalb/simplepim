@@ -21,7 +21,7 @@ class MyApp extends App {
           <title>Simple PIM</title>
           <meta charSet="utf-8" />
         </Head>
-        <AppProvider shopOrigin="api-learning.myshopify.com">
+        <AppProvider shopOrigin="api-learning.myshopify.com" apiKey={API_KEY}>
           <ApolloProvider client={client}>
             <Component {...pageProps} />
           </ApolloProvider>
