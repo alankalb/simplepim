@@ -23,7 +23,7 @@ app.prepare().then(() => {
     graphQLProxy({
       version: ApiVersion.Unstable,
       shop: 'api-learning.myshopify.com',
-      password: process.env.api_secret,
+      password: process.env.api_secret
     }),
   );
 

@@ -8,7 +8,7 @@ import { ApolloProvider } from 'react-apollo';
 
 const client = new ApolloClient({
   fetchOptions: {
-    credentials: 'include'
+    
   },
 });
 
