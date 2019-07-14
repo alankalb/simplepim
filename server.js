@@ -8,7 +8,6 @@ dotenv.config();
 const { default: graphQLProxy } = require('@shopify/koa-shopify-graphql-proxy');
 const { ApiVersion } = require('@shopify/koa-shopify-graphql-proxy');
 
-
 const port = parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
@@ -23,7 +22,7 @@ app.prepare().then(() => {
   server.use(
     graphQLProxy({
       version: ApiVersion.Unstable,
-      shop: 'alankalb.myshopify.com',
+      shop: 'api-learning.myshopify.com',
       password: process.env.api_secret,
     }),
   );

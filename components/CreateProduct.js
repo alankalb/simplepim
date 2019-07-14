@@ -39,6 +39,7 @@ class CreateProduct extends React.Component {
     return value => this.setState({ [field]: value });
   };
 
+
   render() {
     let successCard = <Card.Section></Card.Section>
     if (this.state.loading){
